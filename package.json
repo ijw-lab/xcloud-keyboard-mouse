@@ -3,7 +3,7 @@
   "private": true,
   "description": "Browser extension for controlling xCloud using a keyboard and mouse",
   "author": "David Idol",
-  "license": "GPL-3.0-or-later",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/idolize/xcloud-keyboard-mouse.git"

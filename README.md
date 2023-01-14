@@ -7,7 +7,6 @@
 <p align="center">
     <a href="https://chrome.google.com/webstore/detail/keyboard-mouse-for-xbox-x/nmfedkijhhigaikbadoijiolmjjgoimd"><img src="https://img.shields.io/chrome-web-store/users/nmfedkijhhigaikbadoijiolmjjgoimd" alt="Users" /></a>
     <a href="https://github.com/idolize/xcloud-keyboard-mouse/actions/workflows/build.yml"><img src="https://github.com/idolize/xcloud-keyboard-mouse/actions/workflows/build.yml/badge.svg?event=push&branch=master" alt="CI Status" /></a>
-    <a href="https://github.com/idolize/xcloud-keyboard-mouse/blob/master/LICENSE.txt"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License GPLv3" /></a>
 </p>
 
 ***
@@ -86,7 +85,3 @@ Feel free to [file an issue](https://github.com/idolize/xcloud-keyboard-mouse/is
 ## Development and contributing
 
 See [the contribution doc](CONTRIBUTING.md) for more information.
-
-## License
-
-The code is licensed as [GPLv3](https://github.com/idolize/xcloud-keyboard-mouse/blob/master/LICENSE.txt) with ONE RESTRICTION: you are not granted any permission to distribute your own copy of this code (or a modified version of this code) on any browser extension store (e.g. Chrome Web Store, Edge Add Ons store, Firefox Add Ons store, etc.)
