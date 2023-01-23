@@ -5,7 +5,7 @@ you are agreeing that any code you have contributed will be licensed under the t
 
 ## Prerequisites
 
-* [node + npm](https://nodejs.org/) (Current Version)
+* [node + npm](https://nodejs.org/) (tested with v16.13.0)
 
 ## Setup
 
@@ -27,6 +27,12 @@ npm run build:chrome
 
 ```
 npm run build:edge
+```
+
+**Firefox:**
+
+```
+npm run build:firefox
 ```
 
 **Safari:**

@@ -4,6 +4,7 @@ const validateOptions = require('schema-utils').validate;
 
 const manifestBase = require('../manifest/manifest.json');
 const edgeManifestExtra = require('../manifest/edge-manifest-extra.json');
+const firefoxManifestExtra = require('../manifest/firefox-manifest-extra.json');
 
 // Schema for options
 const schema = {
@@ -36,6 +37,9 @@ class BuildManifestPlugin {
     // Add additional manifest data
     if (this.opts.browser.toLowerCase() === 'edge') {
       mergeConfigs(manifestBase, edgeManifestExtra);
+    } else if (this.opts.browser.toLowerCase() === 'firefox') {
+      convertServiceWorkerToEventPage(manifestBase);
+      mergeConfigs(manifestBase, firefoxManifestExtra);
     } else if (this.opts.browser.toLowerCase() === 'safari') {
       convertV3ToV2(manifestBase);
     }
@@ -58,6 +62,12 @@ function mergeConfigs(conf1, conf2) {
     }
     conf1[key] = conf2[key];
   }
+}
+
+function convertServiceWorkerToEventPage(conf) {
+  // https://github.com/mozilla/web-ext/issues/2379#issuecomment-1173745486
+  conf.background.scripts = [conf.background.service_worker];
+  delete conf.background.service_worker;
 }
 
 function convertV3ToV2(conf) {
