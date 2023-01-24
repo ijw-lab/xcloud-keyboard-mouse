@@ -51,7 +51,7 @@ npm run build:safari
 You can also run the following command to automatically re-build the extension each time you change any of the source files using the `watch` script instead of `build`:
 
 ```
-npm run watch:<chrome|edge|safari>
+npm run watch:<chrome|edge|firefox|safari>
 ```
 
 ### Visual Studio Code
